@@ -227,6 +227,11 @@ footer a{
 }
 
 @media screen and (max-width: 767px){
+    body{
+        box-sizing: border-box;
+        background: radial-gradient(circle, #645cbb8b 6%, transparent 0%);
+        background-size: 1em 1em;
+    }
     .nav-desktop-ul{
         margin-right: 25px;
     }

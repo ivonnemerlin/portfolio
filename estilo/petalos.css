@@ -7,10 +7,8 @@
     font-size: 24px;
     color: #A084DC;
 }
-.desc{
-    margin-top: 100px;
-}
 .desc h3{
+    margin-top: 100px;
     margin-left: 183px;
 }
 .text{
@@ -29,11 +27,9 @@
 .identificadores-container{
     margin-top: 100px;
 }
-
 .identificadores-container .sub h3{
     margin-left: 183px;
 }
-
 .identificadores{
     display: flex;
     flex-wrap: wrap;
@@ -149,39 +145,42 @@
 }
 
 @media screen and (min-width: 768px) and (max-width:1210px){
-    .desc{
-        margin-top: 100px;
+    .sub{
+        margin-left: 0px;
         text-align: center;
     }
     .desc h3{
         margin-left: 0px;
     }
     .text{
-        gap: 15px;
-        margin-top: 25px;    
+        text-align: center;
+        gap: 10px;
+        margin-top: 45px;    
     }
     .text p{
-        width: 600px;
+        width: 625px;
     }
     .identificadores-container{
         margin-top: 45px;
     }    
     .identificadores-container .sub h3{
-        text-align: center;
         margin-left: 0px;
     }    
     .identificadores{
-        margin-top: 45px 50px 0px 50px;
+        gap: 20px;
+        margin: 45px 25px 0px 25px;
     }
     .obj{
         width: 150px;
     }
     .resources-section{
         margin-top: 45px;
-        flex-direction: column;
-        text-align: center;
         align-items: center;
+        flex-direction: column;
         gap: 45px;
+    }
+    .color-container img{
+        width: 600px;
     }
     .color-container, .tipo-container{
         margin-top: 45px;
@@ -190,135 +189,144 @@
         margin-top: 45px;
     }
     .logo-section h3{
-        text-align: center;
         margin-left: 0px;
     }
     .logo-container{
-        gap: 15px;
         margin: 35px 25px 0px 25px;
     }
     .logo-container img{
         width: 150px;
     }
-    .textures-container{
-        margin-top: 45px;
-    }
     .textures-container h3{
-        text-align: center;
         margin-left: 0px;
     }
     .textures{
-        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
         margin-top: 45px;
+    }
+    .textures img{
+        width: 550px;
+        height: 150px;
     }
     .products-container{
         margin-top: 45px;
     }
     .products-container h3{
-        text-align: center;
         margin-left: 0px;
     }
     .products{
-        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
         margin-top: 45px;
+    }
+    .products img,video{
+        width: 560px;
+        height: 300px;
     }
 }
 
 @media screen and (max-width: 767px){
-    .sub h3{
-        font-size: 22px;
-    }
-    .desc{
-        margin-top: 100px;
+    .sub{
+        margin-left: 0px;
         text-align: center;
+    }
+    .products-container h3,.textures-container h3,.logo-section h3,.resources-section h3,.identificadores-container h3,.desc h3{
+        font-size: 24px;
     }
     .desc h3{
         margin-left: 0px;
-        margin-top: -45px;
     }
     .text{
-        gap: 15px;
-        margin-top: 25px;    
+        text-align: center;
+        gap: 10px;
+        margin-top: 20px;    
     }
     .text p{
-        width: 300px;
-        line-height: 1.6;
+        width: 350px;
     }
     .identificadores-container{
         margin-top: 45px;
     }    
     .identificadores-container .sub h3{
-        text-align: center;
         margin-left: 0px;
     }    
     .identificadores{
-        gap: 10px;
-        margin-top: 45px 50px 0px 50px;
+        gap: 20px;
+        margin: 45px 25px 0px 25px;
     }
     .obj{
-        border-radius: 10px;
-        width: 125px;
+        width: 130px;
     }
     .resources-section{
         margin-top: 45px;
-        flex-direction: column;
-        text-align: center;
         align-items: center;
+        flex-direction: column;
         gap: 45px;
     }
-    .color-container, .tipo-container{
-        margin-top: 45px;
+    .color-section{
+        text-align: center;
     }
     .color-container img{
-        width: 300px;
+        width: 320px;
+    }
+    .color-container, .tipo-container{
+        margin-top: 25px;
     }
     .tipo-container{
         flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .tipo img{
+        width: 275px;
     }
     .logo-section{
-        margin-top: 45px;
+        margin-top: 25px;
     }
     .logo-section h3{
-        text-align: center;
         margin-left: 0px;
     }
     .logo-container{
-        gap: 10px;
-        margin: 45px 25px 0px 25px;
+        margin: 35px 5px 0px 5px;
     }
     .logo-container img{
-        width: 125px;
+        width: 130px;
     }
     .textures-container{
-        margin-top: 45px;
+        margin-top: 30px;
     }
     .textures-container h3{
-        text-align: center;
         margin-left: 0px;
     }
     .textures{
-        gap: 10px;
-        margin-top: 45px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 25px;
     }
     .textures img{
-        width: 300px;
+        width: 325px;
         height: 100px;
     }
     .products-container{
-        margin-top: 45px;
+        margin-top: 35px;
     }
     .products-container h3{
-        text-align: center;
         margin-left: 0px;
     }
     .products{
-        gap: 15px;
-        margin-top: 45px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 25px;
     }
-    .products img, .products video{
-        width: 300px;
-        height: 150px;
-    }    
+    .products img,video{
+        width: 350px;
+        height: 200px;
+    }  
     .products img:last-child{
         object-position: 0px -200px ;
     }
