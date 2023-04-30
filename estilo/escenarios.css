@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Section -two*/
+
+.section-two{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.section-two img, .section-two video{
+    width: 560px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+@media screen and (min-width: 768px) and (max-width:1210px){
+    .section-two{
+        margin-top: 100px;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .section-two{
+        margin-top: 65px;
+        gap: 25px;
+    }
+    .section-two img, .section-two video{
+        margin: 0px 25px 0px 25px;
+        width: 325px;
+    }
+}

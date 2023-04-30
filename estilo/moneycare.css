@@ -1,0 +1,433 @@
+/* PÁGINA | MONEY CARE*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.studies--container li::before{
+    margin-top: 9px;
+    height: 8px;
+    width: 8px;
+    background: #3F3351;
+    border-radius: 150px;
+    content:"" ;
+    position: absolute;
+    margin-left: -25px;
+}
+.goals li::before{
+    margin-top: 9px;
+    height: 8px;
+    width: 8px;
+    background: #3F3351;
+    border-radius: 150px;
+    content:"" ;
+    position: absolute;
+    margin-left: -25px;
+}
+
+/*Project description*/
+
+.proj-description--container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 90px;
+    margin-top: 100px;
+    justify-content: center;
+}
+.proj-resume{
+    width: 530px;
+}
+.proj-resume h3{
+    color: #A084DC;
+    font-size: 32px;
+    font-weight: 800;
+}
+.duracion--container, .problem--container{
+    margin-top: 10px;
+}
+.proj-resume p,b{
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.proj-img1--container img{
+    width: 530px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+/*Goals container*/
+
+.goals-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 90px;
+    margin-top: 100px;
+    justify-content: center;
+}
+.proj-img2--container img{
+    width: 530px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.goals{
+    width: 530px;
+}
+.goals li{
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+.sub{
+    font-size: 24px;
+    color: #A084DC;
+}
+.user-research .sub,.weak-points--container .sub, .personas .sub, .studies-rec .sub, .a11y--container .sub{
+    margin-top: 100px;
+    margin-left: 182px;
+}
+
+/*User research*/
+.user-research > p{
+    margin: 0px 25px 0px 25px;
+}
+.user-research--container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.user-research--container p{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+.left, .right{
+    width: 530px;
+}
+
+/*Puntos débiles*/
+.weak-points--c{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 78px;
+    margin-top: 25px;
+}
+.weak-point{
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    padding: 30px 10px 10px 10px;
+    border-radius: 20px;
+    width: 330px;
+    color: #1e1e1e;
+    background-color: #fff;
+    text-align: center;
+}
+.weak-point p{
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 20px;
+}
+.weak-point b{
+    color: #0081C9;
+}
+
+/*Personas*/
+
+.personas--container{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+.personas--container img{
+    width: 530px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+/*User journey app*/
+
+.userj-wireframes--container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 100px;
+}
+.user-journey--container img{
+    width:530px;
+    object-fit: contain;
+    margin-top: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+/*Wireframes containers*/
+
+.wireframes-img--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap:10px;
+    margin-top: 45px;
+    width: 500px;
+}
+.wireframes--container img{
+    height: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+/*Prototypes*/
+
+.money-care--prototypes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+.money-care--prototypes iframe{
+    margin-top: 35px;
+    width: 525px;
+    height: 700px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+/*Estudios de usabilidad*/
+
+.studies--container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 25px;
+}
+.left, .right{
+    width: 530px;
+}
+.ronda{
+    margin-top: 35px;
+}
+.ronda li{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+/*Accesibilidad*/
+
+.a11y--c{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 85px;
+}
+.a11y{
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 20px;
+    width: 330px;
+    color: #1e1e1e;
+    background-color: #fff;
+    text-align: center;
+    padding: 35px;
+}
+.a11y b{
+    font-size: 28px;
+    color: #0081C9;
+}
+.a11y p{
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/*Preview Gallery*/
+
+.proj-galery--container img{
+    margin-top: 100px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1210px){
+    .proj-description--container, .goals-container,.user-research--container,.userj-wireframes--container,.money-care--prototypes,.studies--container{
+        flex-direction: column;
+        gap: 45px;
+        align-items: center;
+        text-align: center;
+    }
+    .proj-resume{
+        width: 700px;        
+    }
+    .goals-container{
+        margin-top: 45px;
+    }
+    .goals{
+        width: 700px;
+    }
+    .goals li{
+        line-height: 1.6;
+        font-size: 18px;
+        padding-top: 10px;
+        margin-left: 25px;
+    }
+    .user-research .sub,.weak-points--container .sub, .personas .sub, .studies-rec .sub, .a11y--container .sub,.weak-points--container .sub{
+        margin-top: 45px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .user-research--container{
+        gap: 25px;
+    }
+    .user-research--container .left, .user-research--container .right{
+        width: 725px;
+    }
+    .weak-points--c{
+        gap: 20px;
+        margin-top: 45px;
+    }
+    .personas--container{
+        margin-top: 45px;
+        gap: 20px;
+    }    
+    .personas--container img{
+        width: 330px;
+        border-radius: 20px;
+    }
+    .userj-wireframes--container{
+        margin-top: 45px;
+    }
+    .money-care--prototypes{
+        margin-top: 45px;
+    }
+    .studies--container{
+        gap: 20px;
+        margin-top: 45px;
+    }
+    .a11y--c{
+        gap: 20px;
+        margin-top: 45px;
+    }
+}
+@media screen and (max-width: 767px){
+    .proj-resume p,.user-research--container p,.weak-points--c p,.weak-points--c b,.studies--container li,.studies--container b,.a11y--c p,.a11y--c b{
+        font-size: 16px;
+    }    
+    .proj-description--container, .goals-container,.user-research--container,.userj-wireframes--container,.money-care--prototypes,.studies--container{
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        text-align: center;
+    }
+    .proj-resume{
+        width: 300px;  
+    }
+    .proj-img1--container img,.proj-img2--container img{
+        width: 300px;
+        border-radius: 15px;
+    }
+    .goals-container{
+        margin-top: 25px;
+    }
+    .goals{
+        width: 300px;
+    }
+    .goals li{
+        line-height: 1.6;
+        padding-top: 10px;
+        margin-left: 25px;
+        font-size: 16px;
+    }
+    .user-research .sub,.goals .sub,.weak-points--container .sub, .personas .sub, .money-care--prototypes .sub, .studies-rec .sub, .a11y--container .sub,.weak-points--container .sub{
+        margin-top: 45px;
+        font-size: 20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .user-research--container{
+        gap: 25px;
+    }
+    .user-research--container .left, .user-research--container .right{
+        width: 300px;
+    }
+    .weak-points--c{
+        gap: 20px;
+        margin-top: 45px;
+    }
+    .personas--container{
+        align-items: center;
+        flex-direction: column;
+        margin-top: 45px;
+        gap: 20px;
+    }    
+    .personas--container img{
+        width: 280px;
+        border-radius: 20px;
+    }
+    .userj-wireframes--container{
+        margin-top: 45px;
+    }
+    .user-journey--container .sub,.wireframes--container .sub{
+        font-size: 20px;
+        margin-left: 0px;
+        text-align: center;
+        width: 250px;
+    }
+    .user-journey--container img{        
+        width: 275px;
+        border-radius: 10px;
+    }
+    .wireframes--container{
+        align-items: center;
+    }
+    .wireframes-img--container{
+        width: 300px;
+        gap:10px;
+        margin-top: 35px;
+    }
+    .wireframes--container img{
+        height: 190px;
+        border-radius: 5px;
+    }
+    .money-care--prototypes{
+        margin-top: 0px;
+        gap: 0px;
+    }
+    .money-care--prototypes iframe{
+        width: 300px;
+        height: 600px;
+    }
+    .studies--container{
+        gap: 0px;
+        margin-top: -15px;
+    }
+    .studies--container .left,.studies--container .right{
+        width: 270px;
+    }
+    .a11y--c{
+        gap: 20px;
+        margin-top: 25px;
+
+    }
+}
