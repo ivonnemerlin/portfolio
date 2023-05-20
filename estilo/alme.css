@@ -236,7 +236,7 @@
         margin-left: 0px;
         text-align: center;
     }
-    .products-container h3,.textures-container h3,.logo-section h3,.resources-section h3,.identificadores-container h3,.desc h3{
+    .products-container h3,.textures-container h3,.logo-section h3,.identificadores-container h3,.desc h3{
         font-size: 24px;
     }
     .desc h3{
@@ -264,27 +264,23 @@
         width: 130px;
     }
     .resources-section{
-        margin-top: 45px;
-        align-items: center;
+        margin-top: 100px;
         flex-direction: column;
+        justify-content: center;
         gap: 45px;
     }
-    .color-section{
-        text-align: center;
-    }
-    .color-container img{
-        width: 320px;
+    .color-container img, .tipo img{
+        width: 300px;
+        margin: 0px 25px 0px 25px;
     }
     .color-container, .tipo-container{
-        margin-top: 25px;
+        margin: 35px 35px 0px 35px;
+        width: 330px;
     }
     .tipo-container{
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .tipo img{
-        width: 275px;
+        justify-content: center;
+        gap: 25px;
     }
     .logo-section{
         margin-top: 25px;
@@ -329,5 +325,6 @@
     .products img,.products video{
         width: 350px;
         height: 200px;
+        object-fit: cover;
     }
 }

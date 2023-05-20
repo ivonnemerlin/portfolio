@@ -10,32 +10,36 @@
 h3{
     font-size: 24px;
     color: #A084DC;
-}/*Section one*/
-
-.book{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 115px;
-    margin-top: 100px;
 }
+
+/*Section one*/
+
+
 .about{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
     line-height: 1.4;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 15px;
+    width: 550px;
+
 }
 .about p{
     font-style: italic;
 }
-iframe{
-    width: 550px;
-    height: 300px;
+.about p, .about h3, .about b, .about a{
+    text-align: center;
+}
+.about a{
+    font-weight: 600;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
     border-radius: 15px;
-    border: none;
     box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    margin: 0px 90px 0px 90px;
 }
 
 /*Section -two*/
@@ -51,7 +55,7 @@ iframe{
 .section-two img{
     width: 560px;
     border-radius: 15px;
-    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px2px #1e1e1e15;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
 }
 .art {
     margin-top: 45px;
@@ -64,12 +68,12 @@ iframe{
 .art img{
     width: 560px;
     border-radius: 15px;
-    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px2px #1e1e1e15;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
 }
 
 @media screen and (min-width: 768px) and (max-width:1210px){
-    .book{
-        text-align: center;
+    .about{
+        height: 370px;
     }
     .escenarios{
         margin-top: -45px;
@@ -82,12 +86,26 @@ iframe{
 }
 
 @media screen and (max-width: 767px){
-    .book{
-        text-align: center;
-        margin-top: 45px;
+    
+    .about{
+        height: 425px;
+        width: 325px;
+        padding: 25px 0px 25px 0px;
+        
+        background-color: transparent;
+        box-shadow: none;   
     }
-    .book p, .book b{
-        width: 275px;        
+    .about h3{
+        margin-top: 75px;
+        font-size: 20px;
+    }
+    .about p,.about b,.about a{
+        font-size: 16px;
+        margin: 0px 25px 0px 25px;
+
+    }
+    .about a{
+        margin: 0px 25px 95px 25px; 
     }
     .escenarios{
         margin-top: -45px;
@@ -97,21 +115,16 @@ iframe{
         margin-left: 0px;
         margin-top: 100px;
     }
-    iframe{
-        margin-top: -65px;
-        width: 300px;
-        height: 250px;
-    }
     .section-two, .art{
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
-    .section-two img, .art img{
-        width: 300px;
+    .art img, .section-two img{
+        width: 350px;
         border-radius: 15px;
     }
-    .promocionales h3{
+    .promocionales .sub h3{
         margin-top: -50px;
     }
 }

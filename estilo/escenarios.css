@@ -35,6 +35,7 @@
     }
     .section-two img, .section-two video{
         margin: 0px 25px 0px 25px;
-        width: 325px;
+        width: 350px;
+        border-radius: 15px;
     }
 }
