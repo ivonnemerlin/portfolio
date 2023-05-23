@@ -40,7 +40,7 @@
     .section-two img, video{
         object-fit: cover;
         width: 300px;
-        height: 430px;
+        height: 460px;
     }
 }
 
