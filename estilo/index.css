@@ -1,0 +1,126 @@
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem 2rem 0 2rem;
+}
+.descripcion p{
+    max-width: 38%;
+    min-width: 200px;
+    font-size: 1.11rem;
+    line-height: 2rem;
+}
+.galeria{
+    margin-top: 5rem;
+}
+.galeria__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2rem 0 2rem;
+}
+.galeria__contenedor img{
+	width: 75vw;
+    height: 20rem;
+	object-fit: cover;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.galeria__contenedor img:first-child{
+	border-radius: 1.2rem 1.2rem 0 0;
+}
+.galeria__contenedor img:nth-child(3){
+	border-radius: 0 0 1.2rem 1.2rem;
+}
+.cv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 3.5rem;
+}
+.cv__formacion, .cv__habilidades, .cv__herramientas{
+    width: 23vw;
+}
+.cv__formacion-lista,.cv__habilidades-lista,.cv__herramientas-lista{
+    margin-top: 1rem;
+}
+.cv__formacion-lista button{
+    border-radius: 1.5rem;
+    border: none;
+    width: 20rem;
+    padding: 0.6rem;
+    margin-top: 35px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.cv__formacion-lista a{
+    font-weight: 600;
+    color:var(--color-morado-medio);
+}
+.cv h3{
+    font-size: 2rem;
+    color:var(--color-morado-claro);
+}
+.cv li{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+.cv b{
+    font-size: 1rem;
+    color: var(--color-morado-oscuro);
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:1210px){
+    .descripcion{
+        gap: 4rem;
+    }
+    .descripcion p{
+        max-width: 40%;
+    }
+    .galeria__contenedor img{
+        width: 82vw;
+        height: 20rem;
+    }
+    .cv__formacion-lista button{
+        width: 12rem;
+    }
+    .cv h3{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .descripcion{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .descripcion p{
+        text-align: center;
+        max-width: 75vw;
+    }
+    .galeria__contenedor img{
+        width: 82vw;
+        height: 12rem;
+    }  
+    .cv{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+    .cv h3{
+        font-size: 1.6rem;
+    }
+    .cv__formacion, .cv__habilidades, .cv__herramientas{
+        width: 65vw;
+    }
+    .cv__formacion-lista button{
+        width: 12rem;
+    }
+}

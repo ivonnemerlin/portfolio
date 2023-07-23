@@ -4,245 +4,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivonne Merlin | Patitas Felices</title>
-    <link rel="stylesheet" type="text/css" href="estilo/patitas.css">
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
-    <link rel="stylesheet" type="text/css" href="estilo/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/normalize.css">
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/menu.css">
+    <link rel="stylesheet" href="estilo/footer.css">
+    <link rel="stylesheet" href="estilo/portafolio/ux-ui/patitas.css">
     <link rel="icon" type="favicon" href="img/logo.png" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ivonne Merlin | Patitas Felices</title>
 </head>
 <body>
-    <nav class="nav-desktop">
-        <ul class="nav-desktop-ul">
-            <div class="li-container"><li><a href="index.html">About Me</a></li></div>
-            <div class="li-container"><li><a href="projects.html">Portfolio</a></li></div>
-        </ul>
+    <nav class="menu">
+        <div class="menu__lista">
+            <ul class="menu__lista-boton menu__about">
+                <li class="menu__lista-item"><a href="index.html">About Me</a></li>
+            </ul>
+            <ul class="menu__lista-boton menu__portafolio dropdown">
+                <li class="menu__lista-item menu__item-portafolio"><a href="portfolio.html">Portafolio</a>                
+                    <ul class="menu__sublista-contenedor">
+                        <li class="menu__lista-item menu__item-uxui dropdown">
+                            <a href="uxui.html">Diseño UX/UI</a>
+                            <ul class="menu__sublista-boton menu__sublista-uxui">
+                                <li class="menu__sublista-item menu__item-moneycare">
+                                    <a href="moneycare.html">Money Care</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-sweetbakery">
+                                    <a href="sweetbakery.html">Sweet Bakery</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-patitas">
+                                    <a href="patitasfelices.html">Patitas Felices</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__lista-item menu__item-ilustracion dropdown">
+                            <a href="illust.html">Ilustración Digital</a>
+                            <ul class="menu__sublista-boton menu__sublista-ilustracion">
+                                <li class="menu__sublista-item menu__item-gato">
+                                    <a href="gato-de-habitos.html">Gato de hábitos</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-retraros">
+                                    <a href="retratos.html">Retratos</a>
+                                </li>
+                                <li class="menu__sublista-item menu__escenarios">
+                                    <a href="escenarios.html">Escenarios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__lista-item menu__item-branding dropdown">
+                            <a href="branding.html">Branding</a>
+                            <ul class="menu__sublista-boton menu__sublista-">
+                                <li class="menu__sublista-item menu__item-alme">
+                                    <a href="alme.html">alme</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-petalos">
+                                    <a href="petalos.html">Los pétalos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                </li>                
+            </ul>
+        </div>
     </nav>
 
     <div class="hero">
-        <div class="hero--ivonne-merlin"><h1>Patitas Felices</h1></div>
-        <div class="hero--ux-ui"><h2>Iniciativa social para un refugio de animales que se encuentran <br>en situaciones de riesgo.</h2></div>
+        <div class="hero__titulo"><h1>Patitas Felices</h1></div>
+        <div class="hero__subtitulo"><h2>Iniciativa social para un refugio de animales que se encuentran en situaciones de riesgo.</h2></div>
     </div>
 
-    <div class="proj-description--container">
-        <div class="proj-resume">
-            <h3>Patitas Felices</h3>
-            <div class="duracion--container">
+    <section class="descripcion">
+        <div class="descripcion__container">
+            <div class="descripcion__item-titulo">
+                <h3>...</h3>
+            </div>
+            <div class="descripcion__item-duracion">
                 <b>Duración de proyecto:</b>
                 <p>Diciembre 2022 - Enero 2023</p>
             </div>
-            <div class="problem--container">
+            <div class="descripcion__item-problema">
                 <b>El problema:</b>
                 <p>Personas ocupadas con necesidad de una plataforma que permita llevar el control de adopciones.</p>
             </div>
         </div>
-        <div class="proj-img1--container">
+        <div class="descripcion__item-img">
             <img src="img/patitasfelices/descrip-preview.png">
         </div>
-    </div>
-
-    <div class="goals-container">
-        <div class="proj-img2--container">
+    </section>
+    <section class="objetivos">
+        <div class="objetivos__imagen">
             <img src="img/patitasfelices/goals-preview.png">
         </div>
-        <div class="goals">
-            <div class="sub">
-                <h4>Metas</h4>            
+        <div class="objetivos__contenedor">
+            <div class="objetivos__item-titulo">
+                <h3>Metas</h3>            
             </div>
-            <li>Crear un flujo sencillo y simple de recorrer para los usuarios.</li>
-            <li>Crear un foro que vincule las experiencias de los voluntarios del refugio a cada entrada de las mascotas para tener una perspectiva más amplia.</li>           
+            <div class="objetivos__item-lista">
+                <li>Crear un flujo sencillo y simple de recorrer para los usuarios.</li>
+                <li>Crear un foro que vincule las experiencias de los voluntarios del refugio a cada entrada de las mascotas para tener una perspectiva más amplia.</li>
+            </div>
         </div> 
-    </div>
-    <div class="user-research">
-        <div class="sub">
-            <h4>User Research</h4>            
+    </section>
+    <section class="user-research">
+        <div class="user-research__subtitulo">
+            <h3>User Research</h3>            
         </div>
-        <div class="user-research--container">
-            <div class="left">
+        <div class="user-research__descripcion">
+            <div class="user-research__item-left">
                 <p>Para esta etapa se realizaron entrevistas, cuyas respuestas se utilizaron para realizar mapas de empatía que ayudaron a comprender de mejor manera al target y sus necesidades.</p>
                 <p>Descubrí que muchos de los usuarios se sienten conflictuados con los procesos de adopción, como desconocen del tema piensan que es un proceso que conlleva mucho papeleo y al ser personas que se</p>
             </div>
-            <div class="right">
+            <div class="user-research__item-right">
                 <p>consideran ocupadas para llevar este “trámite constante” postergan sus deseos de adoptar una mascota.</p>
                 <p>Los usuarios buscan obtener todo tipo de información sobre adopciones en un solo sitio, ya que les causa molestia o incomodidad tener que ser redirigidos a sitios distintos, personas o acudir personalmente a los refugios.</p>
             </div>
         </div>
-    </div>
-
-    <div class="weak-points--container">
-        <div class="sub">
-            <h4>Puntos débiles</h4>
+    </section>
+    <section class="debilidades">
+        <div class="debilidades__subtitulo">
+            <h3>Puntos débiles</h3>
         </div>
-        <div class="weak-points--c">
-            <div class="weak-point">
-                <b>Del proceso</b>
+        <div class="debilidades__contenedor">
+            <div class="debilidades__item">
+                <b class="debilidades__item-sub">Del proceso</b>
                 <p>Iniciar una adopción se realiza mediante pasos, el usuario necesita tener una visión clara de cómo comenzar y de qué hacer en cada paso.</p>
             </div>
-            <div class="weak-point">
-                <b>Del producto</b>
+            <div class="debilidades__item">
+                <b class="debilidades__item-sub">Del producto</b>
                 <p>En muchas páginas se ofrece iniciar el proceso de adopción en línea, pero la mayoría siempre son redirigidos a procesos presenciales lo cuál representa dificultades.</p>
             </div>
-            <div class="weak-point">
-                <b>De soporte</b>
+            <div class="debilidades__item">
+                <b class="debilidades__item-sub">De soporte</b>
                 <p>Los usuarios siempre son redirigidos a una persona que tiene actividades dentro de los refugios, lo cuál dificulta la comunicación asertiva ya que ellos se encuentran ocupados con otras actividades.</p>
             </div>
         </div>
-    </div>
-    <div class="personas">
-        <div class="sub">
-            <h4>Personas</h4>
+    </section>
+    <section class="personas">
+        <div class="personas__subtitulo">
+            <h3>Personas</h3>
         </div>
-        <div class="personas--container">
-            <div class="persona">
+        <div class="personas__contenedor">
+            <div class="persona__item">
                 <img src="img/patitasfelices/persona01.png">
             </div>
-            <div class="persona">
+            <div class="persona__item">
                 <img src="img/patitasfelices/persona02.png">
             </div>
         </div>
-    </div>
-    <div class="userj-wireframes--container">
-        <div class="user-journey--container">
-            <div class="sub">
-                <h4>Mapa de recorrido de usuario</h4>
+    </section>
+    <section class="wireframesjourney">
+        <div class="journey">
+            <div class="journey__subtitulo">
+                <h3>Mapa de recorrido de usuario</h3>
             </div>
-            <div class="userjourney-img">
+            <div class="journey__img">
                 <img src="img/patitasfelices/user-journey3.jpg">
             </div>
         </div>
-        <div class="wireframes--container">
-            <div class="sub">
-                <h4>Esquemas de página | Wireframes</h4>
+        <div class="wireframes">
+            <div class="wireframes__subtitulo">
+                <h3>Esquemas de página | Wireframes</h3>
             </div>
-            <div class="wireframes-img--container">
-                <div class="paper-img">
+            <div class="wireframes__contenedor">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/4_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/2_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/3_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/1_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/5_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/6_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/7_wireframes_patitas.jpg">
                 </div>
-                <div class="paper-img">
+                <div class="wireframes__item">
                     <img src="img/patitasfelices/8_wireframes_patitas.jpg">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="ia--container">
-        <div class="sub">
-            <h4>Arquitectura de la información | Mapa de sitio</h4>
+    </section>
+    <section class="arquitectura">
+        <div class="arquitectura__subtitulo">
+            <h3>Arquitectura de la información | Mapa de sitio</h3>
         </div>
-        <div class="image--container">
-            <div class="ia--image">
-                <img src="img/patitasfelices/Arquitectura-de-la-información.png">
-            </div>
+        <div class="arquitectura__imagen">
+            <img src="img/patitasfelices/Arquitectura-de-la-información.png">
         </div>        
-    </div>
-    <div class="patitas--prototypes">
-        <div class="lofi-prototype">
-            <div class="sub">
-                <h4>Lo-fi Prototype</h4>
+    </section>
+    <section class="prototipos">
+        <div class="prototipo__lofi">
+            <div class="prototipo__lofi-subtitulo">
+                <h3>Lo-fi Prototype</h3>
             </div>
             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn7wBVA8AKYkviHfPURAvBX%2FAdoptingPetsWebsite%3Fpage-id%3D0%253A1%26node-id%3D5%253A2%26viewport%3D1736%252C1498%252C0.16%26scaling%3Dmin-zoom%26starting-point-node-id%3D5%253A2%26show-proto-sidebar%3D1" allowfullscreen></iframe>
         </div>
-        <div class="hifi-prototype">
-            <div class="sub">
-                <h4>Hi-fi Prototype</h4>
+        <div class="prototipo__hifi">
+            <div class="prototipo__hifi-subtitulo">
+                <h3>Hi-fi Prototype</h3>
             </div>
             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn7wBVA8AKYkviHfPURAvBX%2FAdoptingPetsWebsite%3Fpage-id%3D39%253A1061%26node-id%3D39%253A1062%26viewport%3D3019%252C1713%252C0.19%26scaling%3Dmin-zoom%26starting-point-node-id%3D39%253A1062%26show-proto-sidebar%3D1" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="studies--container">
-        <div class="sub">
-            <h4>Estudios de usabilidad</h4>
+    </section>
+    <section class="usabilidad">
+        <div class="usabilidad__subtitulo">
+            <h3>Estudios de usabilidad</h3>
         </div>
-        <div class="boxes">
-            <div class="std Type">
+        <div class="usabilidad__contenedor">
+            <div class="usabilidad__item">
                 <b>Tipo de estudio</b>
                 <p>No moderado</p>
             </div>
-            <div class="std place">
+            <div class="usabilidad__item">
                 <b>Localización</b>
                 <p>CDMX. Remoto.</p>
             </div>
-            <div class="std people">
+            <div class="usabilidad__item">
                 <b>Participantes</b>
                 <p> 10 personas</p>
             </div>
-            <div class="std time">
+            <div class="usabilidad__item">
                 <b>Duración</b>
                 <p>15 - 20 minutos</p>
             </div>
         </div>        
-    </div>
-    <div class="discover--container">
-        <div class="sub">
-            <h4>Estudios de usabilidad - Descubrimientos</h4>
+    </section>
+    <section class="descubrimientos">
+        <div class="descubrimientos__subtitulo">
+            <h3>Estudios de usabilidad - Descubrimientos</h3>
         </div>
-        <div class="boxes">
-            <div class="discover">
+        <div class="descubrimientos__contenedor">
+            <div class="descubrimientos__item">
                 <b>1</b>
                 <p>Para mejor visualización de los elementos los botones CTA deberían estar separados de imágenes</p>
             </div>
-            <div class="discover">
+            <div class="descubrimientos__item">
                 <b>2</b>
                 <p>Debería haber una opción dentro del proceso de adopción que permita seleccionar a la mascota sin pasar por la pagina donde se ven a todos los adoptables.</p>
             </div>
-            <div class="discover">
+            <div class="descubrimientos__item">
                 <b>3</b>
                 <p>Además de opciones básicas como mis favoritos, registro de adopciones o ajustes de la cuenta debería haber un registro de las entradas al foro publicadas.</p>
             </div>
         </div>        
-    </div>
-    <div class="a11y--container">
-        <div class="sub">
-            <h4>Accesibilidad</h4>
+    </section>
+    <div class="a11y">
+        <div class="a11y__subtitulo">
+            <h3>Accesibilidad</h3>
         </div>
-        <div class="a11y--c">
-            <div class="a11y">
+        <div class="a11y__contenedor">
+            <div class="a11y__contenedor-item">
                 <b>1</b>
                 <p>En la tipografía se utilizaron puntajes distintos para que se identificara un orden de lectura coherente y visualmente atractivo.</p>
             </div>
-            <div class="a11y">
+            <div class="a11y__contenedor-item">
                 <b>2</b>
                 <p>Se utilizará texto alternativo para que los lectores de página “screen readers” tengan mejor acceso al contenido.</p>
             </div>
-            <div class="a11y">
+            <div class="a11y__contenedor-item">
                 <b>3</b>
                 <p>Se utilizarán “landmarks” o puntos de referencia para que las personas que utilizan tecnologías de asistencia puedan navegar por el sitio.</p>
             </div>
         </div>        
     </div>
-    <div class="patitas-gallery--container">
+    <div class="thumbnail">
         <img src="img/patitasfelices/gallery - patitas felicescover.png">
     </div>
     <footer>
-        <div class="footer-contact">
+        <div class="footer__contacto">
             <p>Get in touch</p>
         </div>
-        <div class="footer-links--container">
-            <div class="footer-links">
-                <div class="email"><a href="mailto:ivonnemerlin22@gmail.com" target="_blank">email</a></div>
-                <div class="behance"><a href="https://www.behance.net/Ivonne_Merlin" target="_blank">Behance</a></div>
-                <div class="Instagram"><a href="https://www.instagram.com/meruu_rin/" target="_blank">Instagram</a></div>          
-                <div class="Github"><a href="https://github.com/ivonnemerlin" target="_blank">Github</a></div>          
-                <div class="linkedin"><a href="https://www.linkedin.com/in/ivonne-merlin/" target="_blank">LinkedIn</a></div>          
+        <div class="footer__container">
+            <div class="footer__container-links">
+                <div class="footer__container-email"><a href="mailto:ivonnemerlin22@gmail.com" target="_blank">email</a></div>
+                <div class="footer__container-behance"><a href="https://www.behance.net/Ivonne_Merlin" target="_blank">Behance</a></div>
+                <div class="footer__container-Instagram"><a href="https://www.instagram.com/meruu_rin/" target="_blank">Instagram</a></div>          
+                <div class="footer__container-Github"><a href="https://github.com/ivonnemerlin" target="_blank">Github</a></div>          
+                <div class="footer__container-linkedin"><a href="https://www.linkedin.com/in/ivonne-merlin/" target="_blank">LinkedIn</a></div>          
             </div>
         </div>
     </footer>

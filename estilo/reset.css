@@ -1,0 +1,75 @@
+:root{
+    --color-morado-oscuro:#3F3351;
+    --color-morado-medio:#645CBB;
+    --color-morado-claro:#A084DC;
+    --color-azul-medio: #0081C9;
+    --color-negro:#1e1e1e;
+    --color-negro-2:#2D2926;
+    --color-negro-20:#1e1e1e20;
+    --color-negro-40:#1e1e1e40;
+    --color-negro-50:#1e1e1e50;
+    --color-negro-60:#1e1e1e60;
+    --color-negro-80:#1e1e1e80;
+
+    --tipografia-textos:'Poppins', sans-serif;
+    --tipografia-subtitulos:'Space Grotesk', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: var(--tipografia-textos);
+    font-size: 16px;
+}    
+body{
+    background: radial-gradient(circle, #645cbb8b 10%, transparent 10%);
+    background-size: 1em 1em;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-morado-medio);
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 7rem 0 0 10.5rem;
+}
+.hero__titulo {
+    font-size: 1.5rem;
+    color: var(--color-morado-claro);
+}
+.hero__subtitulo h2{
+    font-size: 4.2rem;
+    color: var(--color-negro);
+    line-height: 5rem;
+    margin-top: -2rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1210px){
+    .hero{
+        margin: 7rem 1rem 0 6rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .hero{
+        margin: 10rem 1.5rem 0 1.5rem;
+        text-align: center;
+    }
+    .hero__titulo {
+        font-size: 1rem;
+    }
+    .hero__subtitulo h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-top: -1rem;
+    }
+}

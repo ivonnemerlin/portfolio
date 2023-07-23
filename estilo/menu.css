@@ -1,0 +1,111 @@
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+.menu__lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-right: 14rem;
+}
+.menu__lista-boton{
+    margin: 2.5rem 0 2.5rem 0;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 1.5rem;
+}
+.menu__item-portafolio{
+    width: 185px;
+}
+
+.menu__sublista-contenedor{
+    margin: 0.8rem 0 0 -1.6rem;
+    width: 185px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.menu__sublista-boton{
+    margin: -1.8rem 0 0 9.8rem;
+    padding: 1rem 0.2rem;
+    border-radius: 1rem;
+    width: 185px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    background-color: #fff;
+}
+
+
+.menu__lista-item{
+    font-family: var(--tipografia-subtitulos);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+}
+
+
+.menu__lista li ul{
+    display: none;
+    position: absolute;
+}
+.menu__lista li:hover >ul{
+    display: block;
+    
+}
+
+.menu__sublista-item a:hover{
+    background-color: var(--color-morado-claro);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.2rem 1.3rem 0.2rem 1.3rem;
+}
+.menu__sublista-boton{
+    display: no;
+}
+.menu__sublista-item {
+    padding: 0.3rem 0 0.3rem 0;
+}
+.menu__sublista-item a{
+    color: var(--color-negro);
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1210px) {
+    .menu__lista{
+        margin-right: 13.5rem;
+    }
+    .menu__sublista-boton{
+        margin: -1.8rem 0 0 9.8rem;
+        padding: 1rem 0.2rem;
+        border-radius: 1rem;
+        width: 185px;
+        box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+        background-color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    .menu{
+        left: 0;
+    }
+    .menu__lista{
+        margin-right: 0;
+        justify-content: center;
+    }
+
+
+    .menu__lista li:hover >ul{
+        display: none;
+        
+    }
+    
+}  

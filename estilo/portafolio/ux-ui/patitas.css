@@ -1,0 +1,548 @@
+.user-research__subtitulo h3,.debilidades__subtitulo h3, .personas__subtitulo h3,
+.usabilidad__subtitulo h3, .a11y__subtitulo h3, .arquitectura__subtitulo h3,
+.descubrimientos__subtitulo h3
+{    
+    color: var(--color-morado-claro);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-left: 13rem;
+}
+.journey__subtitulo h3, .wireframes__subtitulo h3,
+.prototipo__lofi-subtitulo h3, .prototipo__hifi-subtitulo h3
+{
+    color: var(--color-morado-claro);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+
+.descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 7rem;
+    justify-content: center;
+}
+.descripcion__container,.descripcion__item-img img{
+    width: 32rem;
+}
+.descripcion__item-titulo h3{
+    color: var(--color-morado-claro);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.descripcion__item-duracion, .descripcion__item-problema{
+    margin-top: 0.8rem;
+}
+.descripcion__container p,b{
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+.descripcion b {
+    color: var(--color-morado-oscuro);
+}
+.descripcion__item-img img{
+    border-radius: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+
+.objetivos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 5rem;
+    justify-content: center;
+}
+.objetivos li{
+    font-size: 1.1rem;
+}
+.objetivos__imagen img{
+    width: 32rem;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.objetivos__contenedor{
+    width: 32rem;
+}
+.objetivos__item-titulo h3{
+    color: var(--color-morado-claro);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.objetivos__item-lista{
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding-top: 0.8rem;
+    margin-left: 1.5rem;
+}
+.objetivos__item-lista li::before{
+    margin-top: 0.6rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: var(--color-morado-medio);
+    border-radius: 2rem;
+    content:"" ;
+    position: absolute;
+    margin-left: -1.5rem;
+}
+
+
+
+.user-research__descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.user-research__descripcion p{
+    margin: 0 2rem 0 2rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #1e1e1e;
+}
+.user-research__item-right, .user-research__item-left{
+    width: 34rem;
+}
+
+
+
+.debilidades__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.debilidades__item{
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    padding: 30px 10px 10px 10px;
+    border-radius: 1.5rem;
+    width: 330px;
+    background-color: #fff;
+    text-align: center;
+}
+.debilidades__item p{
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.debilidades__item-sub{
+    color: var(--color-morado-medio);
+}
+
+
+
+.personas__contenedor{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+.persona__item img{
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+
+.wireframesjourney{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+.journey__img img{
+    width:32rem;
+    object-fit: contain;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.wireframes__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:0.6rem;
+    margin-top: 2rem;
+    width: 32rem;
+}
+.wireframes__item img{
+    height: 10rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+
+.arquitectura__imagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.arquitectura__imagen img{
+    width: 72vw;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+
+.prototipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+.prototipo__lofi iframe, .prototipo__hifi iframe{
+    margin-top: 35px;
+    width: 72vw;
+    height: 32rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+
+
+.usabilidad{
+    margin-top: 5rem;
+}
+.usabilidad__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 6rem;
+}
+.usabilidad__item{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 1.1rem;
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.usabilidad__item b{
+    color: var(--color-morado-claro);
+}
+
+
+
+.descubrimientos__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 85px;
+}
+.descubrimientos__item{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 1rem;
+    width: 19rem;
+    padding: 2rem;
+}
+.descubrimientos__item p{
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.descubrimientos__item b{
+    color: var(--color-morado-claro);
+    font-size: 1.5rem;
+}
+
+
+
+
+.a11y__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+.a11y__contenedor-item{
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    border-radius: 20px;
+    width: 20rem;
+    background-color: #fff;
+    text-align: center;
+    padding: 35px;
+}
+.a11y__contenedor-item b{
+    font-size: 1.6rem;
+    color: var(--color-morado-claro);
+}
+.a11y__contenedor-item p{
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 0.6rem;
+}
+
+
+.thumbnail img{
+    margin-top: 100px;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+@media screen and (min-width: 768px) and (max-width:1209px) {
+
+    .user-research__subtitulo h3,
+    .debilidades__subtitulo h3,
+    .personas__subtitulo h3,
+    .usabilidad__subtitulo h3,
+    .a11y__subtitulo h3,
+    .arquitectura__subtitulo h3,
+    .descubrimientos__subtitulo h3 {
+        text-align: center;
+        margin-left: 0rem;
+    }
+    .journey__subtitulo h3, .wireframes__subtitulo h3,
+    .prototipo__lofi-subtitulo h3, .prototipo__hifi-subtitulo h3
+    {
+        text-align: center;
+    }
+    .descripcion{
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .descripcion__container,.descripcion__item-img img{
+        width: 75vw;
+    }
+
+
+    .objetivos{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .objetivos__imagen img,.objetivos__contenedor{
+        width: 75vw;
+    }
+
+    .user-research__descripcion{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .user-research__item-right, .user-research__item-left{
+        width: 75vw;
+    }
+    .debilidades__contenedor{
+        margin: 2rem 1rem 0 1rem;
+
+    }
+    .debilidades__item{
+        width: 25rem;
+    }
+    .personas__contenedor{
+        gap: 3rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .persona__item img{
+        width: 40vw
+    }
+    .wireframesjourney{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .journey__img img{
+        width:75vw;
+    }
+    .wireframes__contenedor{
+        gap:1rem;
+        width: 75vw;
+    }
+    .wireframes__item img{
+        height: 18rem;
+    }
+
+    .arquitectura__imagen{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .arquitectura__imagen img{
+        width: 75vw;
+    }
+
+
+
+    .prototipos{
+        gap: 3rem 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prototipos iframe{
+        width: 75vw;
+        height: 60vh;
+    }
+    .usabilidad__contenedor{
+        gap: 1rem;
+    }
+    .usabilidad__contenedor-izq, .usabilidad__contenedor-der{
+        width: 75vw;
+    }
+
+    .descubrimientos__contenedor{
+        gap: 2rem;
+    }
+    .descubrimientos__item{
+        width: 26rem;
+        padding: 2rem;
+    }
+
+
+    .a11y__contenedor{
+        gap: 1rem;
+    }
+    .a11y__contenedor-item{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 767px){
+    .user-research__subtitulo h3,
+    .debilidades__subtitulo h3,
+    .personas__subtitulo h3,
+    .usabilidad__subtitulo h3,
+    .a11y__subtitulo h3,
+    .arquitectura__subtitulo h3,
+    .descubrimientos__subtitulo h3 {
+        text-align: center;
+        margin: 2.5rem 1rem 0 1rem;
+    }
+    .journey__subtitulo h3, .wireframes__subtitulo h3,
+    .prototipo__lofi-subtitulo h3, .prototipo__hifi-subtitulo h3
+    {
+        margin: 2.5rem 1rem 0 1rem;
+        text-align: center;
+    }
+    .descripcion{
+        margin-top: 3rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .descripcion__container,.descripcion__item-img img{
+        width: 85vw;
+    }
+
+
+    .objetivos{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .objetivos__imagen img,.objetivos__contenedor{
+        width: 85vw;
+    }
+
+    .user-research__descripcion{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .user-research__item-right, .user-research__item-left{
+        width: 85vw;
+    }
+    .debilidades__contenedor{
+        margin: 2rem 1rem 0 1rem;
+        gap: 1rem;
+    }
+    .debilidades__item{
+        width: 85vw;
+    }   
+    .personas__contenedor{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .persona__item img{
+        width: 85vw
+    }
+    .wireframesjourney{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    .journey__img img{
+        width:85vw;
+    }
+    .wireframes__contenedor{
+        align-items: center;
+        gap:0.6rem;
+        width: 85vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .wireframes__item img{
+        height: 15rem;
+    }
+    .arquitectura__imagen{
+        margin-top: 2rem;
+    }
+    .arquitectura__imagen img{
+        width: 85vw;
+    }
+    .prototipos{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem 3rem;
+        margin-top: 1rem;
+    }
+    .prototipos iframe{
+        width: 85vw;
+        height: 45vw;
+    }
+    .usabilidad__contenedor{
+        gap: 1rem;
+    }
+    .usabilidad__contenedor-izq, .usabilidad__contenedor-der{
+        width: 75vw;
+    }
+    .descubrimientos__contenedor{
+        gap: 2rem;
+    }
+    .descubrimientos__item{
+        width: 85vw;
+        padding: 2rem;
+    }
+    .a11y__contenedor{
+        gap: 2rem;
+    }
+    .a11y__contenedor-item{
+        width: 85vw;
+    }
+}

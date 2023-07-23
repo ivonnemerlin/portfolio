@@ -1,0 +1,36 @@
+.escenarios{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.escenarios img, .escenarios video{
+    width: 35rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+
+@media screen and (min-width: 768px) and (max-width:1210px){
+    .escenarios{
+        gap: 1rem 0rem;
+        margin-top: 3rem;
+    }
+    .escenarios img, .escenarios video{
+        margin: 0 0.5rem 0 0.5rem;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .escenarios{
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .escenarios img, .escenarios video{
+        border-radius: 0.8rem;
+        margin: 0 1rem 0 1rem;
+        width: 85vw;
+    }
+}

@@ -3,30 +3,76 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ivonne Merlin | Entornos & escenarios</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
-    <link rel="stylesheet" type="text/css" href="estilo/escenarios.css">
-    <link rel="stylesheet" type="text/css" href="estilo/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/normalize.css">
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/menu.css">
+    <link rel="stylesheet" href="estilo/footer.css">
+    <link rel="stylesheet" href="estilo/portafolio/ilustracion/escenarios.css">
     <link rel="icon" type="favicon" href="img/logo.png" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ivonne Merlin | Entornos & escenarios</title>
 </head>
 <body>
-    <nav class="nav-desktop">
-        <ul class="nav-desktop-ul">
-            <div class="li-container"><li><a href="index.html">About Me</a></li></div>
-            <div class="li-container"><li><a href="projects.html">Portfolio</a></li></div>
-        </ul>
+    <nav class="menu">
+        <div class="menu__lista">
+            <ul class="menu__lista-boton menu__about">
+                <li class="menu__lista-item"><a href="index.html">About Me</a></li>
+            </ul>
+            <ul class="menu__lista-boton menu__portafolio dropdown">
+                <li class="menu__lista-item menu__item-portafolio"><a href="portfolio.html">Portafolio</a>                
+                    <ul class="menu__sublista-contenedor">
+                        <li class="menu__lista-item menu__item-uxui dropdown">
+                            <a href="uxui.html">Diseño UX/UI</a>
+                            <ul class="menu__sublista-boton menu__sublista-uxui">
+                                <li class="menu__sublista-item menu__item-moneycare">
+                                    <a href="moneycare.html">Money Care</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-sweetbakery">
+                                    <a href="sweetbakery.html">Sweet Bakery</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-patitas">
+                                    <a href="patitasfelices.html">Patitas Felices</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__lista-item menu__item-ilustracion dropdown">
+                            <a href="illust.html">Ilustración Digital</a>
+                            <ul class="menu__sublista-boton menu__sublista-ilustracion">
+                                <li class="menu__sublista-item menu__item-gato">
+                                    <a href="gato-de-habitos.html">Gato de hábitos</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-retraros">
+                                    <a href="retratos.html">Retratos</a>
+                                </li>
+                                <li class="menu__sublista-item menu__escenarios">
+                                    <a href="escenarios.html">Escenarios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__lista-item menu__item-branding dropdown">
+                            <a href="branding.html">Branding</a>
+                            <ul class="menu__sublista-boton menu__sublista-">
+                                <li class="menu__sublista-item menu__item-alme">
+                                    <a href="alme.html">alme</a>
+                                </li>
+                                <li class="menu__sublista-item menu__item-petalos">
+                                    <a href="petalos.html">Los pétalos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                </li>                
+            </ul>
+        </div>
     </nav>
-
-    <div class="hero">
-        <div class="hero--ivonne-merlin"><h1>Ilustración conceptual</h1></div>
-        <div class="hero--ux-ui"><h2>Entornos & escenarios</h2></div>
-    </div>
-
-    <div class="section-two gallery">
+    <section class="hero">
+        <div class="hero__titulo"><h1>Ilustración conceptual</h1></div>
+        <div class="hero__subtitulo"><h2>Entornos & escenarios</h2></div>
+    </section>
+    <section class="escenarios">
         <img  src="img/illust/entornos_escenarios/01_escenarios.jpg">
         <video src="video/illust/escenarios/racoon-background-v2.mp4"muted autoplay loop></video>
         <img src="img/illust/entornos_escenarios/04_escenarios.jpg">
@@ -41,18 +87,18 @@
         <video src="video/illust/escenarios/host-background.mp4" muted autoplay loop></video>
         <img src="img/illust/entornos_escenarios/08_escenarios.jpg">
         <img src="img/illust/entornos_escenarios/09_escenarios.jpg">
-    </div>
+    </section>
     <footer>
-        <div class="footer-contact">
+        <div class="footer__contacto">
             <p>Get in touch</p>
         </div>
-        <div class="footer-links--container">
-            <div class="footer-links">
-                <div class="email"><a href="mailto:ivonnemerlin22@gmail.com" target="_blank">email</a></div>
-                <div class="behance"><a href="https://www.behance.net/Ivonne_Merlin" target="_blank">Behance</a></div>
-                <div class="Instagram"><a href="https://www.instagram.com/meruu_rin/" target="_blank">Instagram</a></div>          
-                <div class="Github"><a href="https://github.com/ivonnemerlin" target="_blank">Github</a></div>          
-                <div class="linkedin"><a href="https://www.linkedin.com/in/ivonne-merlin/" target="_blank">LinkedIn</a></div>          
+        <div class="footer__container">
+            <div class="footer__container-links">
+                <div class="footer__container-email"><a href="mailto:ivonnemerlin22@gmail.com" target="_blank">email</a></div>
+                <div class="footer__container-behance"><a href="https://www.behance.net/Ivonne_Merlin" target="_blank">Behance</a></div>
+                <div class="footer__container-Instagram"><a href="https://www.instagram.com/meruu_rin/" target="_blank">Instagram</a></div>          
+                <div class="footer__container-Github"><a href="https://github.com/ivonnemerlin" target="_blank">Github</a></div>          
+                <div class="footer__container-linkedin"><a href="https://www.linkedin.com/in/ivonne-merlin/" target="_blank">LinkedIn</a></div>          
             </div>
         </div>
     </footer>
