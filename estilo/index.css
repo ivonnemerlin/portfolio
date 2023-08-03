@@ -4,13 +4,16 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    margin: 3rem 2rem 0 2rem;
+    margin: 3rem 2rem 0 2rem; 
 }
-.descripcion p{
+.descripcion p, .descripcion__contenedor-imagen{
     max-width: 38%;
     min-width: 200px;
     font-size: 1.11rem;
     line-height: 2rem;
+}
+.descripcion__imagen img{
+    background-size: 150%;
 }
 .galeria{
     margin-top: 5rem;

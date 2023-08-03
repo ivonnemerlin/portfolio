@@ -7,64 +7,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="favicon" href="img/iconos/icono-4.png" />
     <link rel="stylesheet" href="estilo/normalize.css">
     <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/menu.css">
     <link rel="stylesheet" href="estilo/footer.css">
     <link rel="stylesheet" href="estilo/portafolio/ux-ui/moneycare.css">
-    <link rel="icon" type="favicon" href="img/logo.png"/>
     <title>Ivonne Merlin | Money Care</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu__lista">
-            <ul class="menu__lista-boton menu__about">
-                <li class="menu__lista-item"><a href="index.html">About Me</a></li>
-            </ul>
-            <ul class="menu__lista-boton menu__portafolio dropdown">
-                <li class="menu__lista-item menu__item-portafolio"><a href="portfolio.html">Portafolio</a>                
-                    <ul class="menu__sublista-contenedor">
-                        <li class="menu__lista-item menu__item-uxui dropdown">
-                            <a href="uxui.html">Diseño UX/UI</a>
-                            <ul class="menu__sublista-boton menu__sublista-uxui">
-                                <li class="menu__sublista-item menu__item-moneycare">
-                                    <a href="moneycare.html">Money Care</a>
-                                </li>
-                                <li class="menu__sublista-item menu__item-sweetbakery">
-                                    <a href="sweetbakery.html">Sweet Bakery</a>
-                                </li>
-                                <li class="menu__sublista-item menu__item-patitas">
-                                    <a href="patitasfelices.html">Patitas Felices</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__lista-item menu__item-ilustracion dropdown">
-                            <a href="illust.html">Ilustración Digital</a>
-                            <ul class="menu__sublista-boton menu__sublista-ilustracion">
-                                <li class="menu__sublista-item menu__item-gato">
-                                    <a href="gato-de-habitos.html">Gato de hábitos</a>
-                                </li>
-                                <li class="menu__sublista-item menu__item-retraros">
-                                    <a href="retratos.html">Retratos</a>
-                                </li>
-                                <li class="menu__sublista-item menu__escenarios">
-                                    <a href="escenarios.html">Escenarios</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__lista-item menu__item-branding dropdown">
-                            <a href="branding.html">Branding</a>
-                            <ul class="menu__sublista-boton menu__sublista-">
-                                <li class="menu__sublista-item menu__item-alme">
-                                    <a href="alme.html">alme</a>
-                                </li>
-                                <li class="menu__sublista-item menu__item-petalos">
-                                    <a href="petalos.html">Los pétalos</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>                    
-                </li>                
+    <nav class="nav">
+        <div class="nav__contenedor nav__desktop ">
+
+            <a href="index.html" class="enlace__index">
+                <div class="nav__logotipo-container">
+                    <img class="nav__logo-imagen" src="/img/iconos/icono-3.png" alt="logo">
+                    <p class="nav__title">Ivonne Merlin</p>
+                </div>
+            </a>
+
+            <div class="menu__lista">
+                <ul class="menu__lista-boton menu__about">
+                    <li class="menu__lista-item"><a href="index.html">About Me</a></li>
+                </ul>
+                <ul class="menu__lista-boton menu__portafolio ">
+                    <li class="menu__lista-item menu__item-portafolio"><a href="portfolio.html">Portafolio</a>
+                        <ul class="menu__sublista-contenedor">
+                            <li class="menu__lista-item menu__item menu__item-uxui ">
+                                <a href="uxui.html">Diseño UX/UI</a>
+                            </li>
+                            <li class="menu__lista-item menu__item menu__item-ilustracion ">
+                                <a href="illust.html">Ilustración Digital</a>
+                            </li>
+                            <li class="menu__lista-item menu__item menu__item-branding ">
+                                <a href="branding.html">Branding</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav__contenedor nav__mobile">
+
+            <a href="index.html" class="enlace__index">
+
+                <div class="nav__logotipo-container">
+                    <img class="nav__logo-imagen" src="/img/iconos/icono-3.png" alt="logo">
+                    <p class="nav__title">Ivonne Merlin</p>
+                </div>
+            </a>
+
+            <a href="#menu" class="nav__menu">
+
+                <span  class="nav__menu material-symbols-outlined nav__icon">
+                    menu
+                    </span>
+            </a>
+
+            <a href="#" class="nav__menu nav__menu--second">
+                <span class="material-symbols-outlined nav__icon">
+                    close
+                    </span>
+            </a>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown__list">
+                    <a href="index.html" class="dropdown__link">
+                        <span class="material-symbols-outlined dropdown__icon">
+                            home
+                            </span>
+                        <span class="dropdown__span">About</span>
+                    </a>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        
+                        <span class="material-symbols-outlined dropdown__icon">
+                            folder_special
+                            </span>
+                        <span class="dropdown__span">Portafolio</span>
+                        <span class="material-symbols-outlined dropdown__arrow">
+                            expand_less
+                            </span>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="uxui.html" class="dropdown__anchor">Diseño UX/UI</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="illust.html" class="dropdown__anchor">Ilustración digital</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="branding.html" class="dropdown__anchor">Identidad de Marca</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="material-symbols-outlined dropdown__icon">
+                            perm_contact_calendar
+                            </span>
+                        <span class="dropdown__span">Get in touch</span>
+                        <span class="material-symbols-outlined dropdown__arrow">
+                            expand_less
+                            </span>
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="mailto:ivonnemerlin22@gmail.com" target="_blank">email</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="https://www.linkedin.com/in/ivonne-merlin/" target="_blank">LinkedIn</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="https://www.behance.net/Ivonne_Merlin" target="_blank">Behance</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="https://github.com/ivonnemerlin" target="_blank">Github</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="https://www.instagram.com/meruu_rin/" target="_blank">Instagram</a>
+                            </li>  
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
