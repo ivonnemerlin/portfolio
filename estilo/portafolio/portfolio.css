@@ -6,69 +6,63 @@
     margin: 5rem 6rem 0 6rem;
 }
 
-.proyecto__imagen{
+.proyecto__imagen img{
     box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
     border-radius: 1rem;
+    object-fit: cover;
     width: 23vw;
     height: 28rem;
 }
 
-.proyecto__imagen--uxui{
-    background: url('/img/preview/preview__money-care.jpg') no-repeat center / cover;
-}
-
-.proyecto__imagen--ilustracion{
-    background: url('/img/preview/preview__ilustracion.jpg') no-repeat center / cover;
-    
-}
-
-.proyecto__imagen--branding{
-    background: url('/img/preview/preview__branding2.jpg') no-repeat center / cover;
-}
-
 .proyecto__link{
+    position: absolute;
+    width: 23vw;
+    margin-top: 10%;
     color: #fff;
     font-size: 1.25rem;
     text-align: center;
     align-items: baseline;
     padding: 5rem 2rem;
-    background-color: var(--color-negro-40);
-    transform: translate(0, 70%);
+    background-color: var(--color-negro-80);
 }
 
 
 @media screen and (min-width:768px) and (max-width:1210px){
     .proyecto__contenedor{
         flex-direction: column;
-        margin: 5rem;
-        gap: 3rem;
+        gap: 2rem;
         align-items: center;
+        text-align: center;
+        margin: 5rem 1rem 0 1rem;
+
     }
-    .proyecto__imagen{
-        width: 75vw;
-        height: 40vh;
+    .proyecto__imagen img{
+        width: 70vw;
+        height: 19rem;
     }
+    
     .proyecto__link{
+        width: 70vw;
+        margin-top: 10%;
         padding: 3rem 2rem;
-        background-color: var(--color-negro-40);
-        transform: translate(0, 70%);
     }
 }
 
 @media screen and (max-width: 767px){
     .proyecto__contenedor{
         flex-direction: column;
-        margin: 3rem;
-        gap: 2rem;
+        margin: 5rem 2.5rem 0 2.5rem;
+        gap: 1.2rem;
         align-items: center;
     }
-    .proyecto__imagen{
-        width: 75vw;
-        height: 40vh;
+    .proyecto__imagen img{
+        width: 65vw;
+        height: 11rem;
     }
+    
     .proyecto__link{
-        padding: 3rem 2rem;
-        background-color: var(--color-negro-80);
-        transform: translate(0, 70%);
+        width: 65vw;
+        margin-top: 7%;
+        padding: 2rem 2rem;
     }
 }

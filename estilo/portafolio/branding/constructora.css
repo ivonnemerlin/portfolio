@@ -161,38 +161,16 @@
     gap: 2rem;
     margin-top: 2rem;
 }
-.productos__contenedor img{
-    object-fit: cover;
+.productos__item{
     width: 35rem;
-    height: 22rem;
+    height: 20rem;
     border-radius: 1rem;
     box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
 }
+.productos__contenedor img{
+    object-fit: cover;
+}
 
-.producto__item-1{
-    background-image: url(/img/identidad-de-marca/constructora/mockup\ -\ 01.jpg);
-    background-position-y: 47%;
-    background-position-x: 30%;
-    background-size: 106%;
-    background-repeat: no-repeat;
-}
-.producto__item-2{
-    background-image: url(/img/identidad-de-marca/constructora/mockup\ -\ 02.jpg);
-    background-position-y: 25%;
-    background-position-x: 50%;
-    background-size: 100%;
-}
-.producto__item-3{
-    background-image: url(/img/identidad-de-marca/constructora/mockup\ -\ 03.jpg);
-    background-position-y: 40%;
-    background-size: 100%;
-}
-.producto__item-4{
-    background-image: url(/img/identidad-de-marca/constructora/mockup\ -\ 04.jpg);
-    background-position-y: 25%;
-    background-position-x: 50%;
-    background-size: 100%;
-}
 
 
 
