@@ -1,41 +1,131 @@
 .descripcion{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
-    margin: 3rem 2rem 0 2rem; 
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 6rem;
+    margin: 3rem 2rem 0 10.5rem; 
 }
-.descripcion p, .descripcion__contenedor-imagen{
-    max-width: 38%;
-    min-width: 200px;
-    font-size: 1.11rem;
+.descripcion p{
+    width: 32rem;
+    font-size: 1.12rem;
     line-height: 2rem;
 }
-.descripcion__imagen img{
-    background-size: 150%;
+.descripcion__imagen{
+    margin-top: -10.5rem;
+    width: 30rem;
 }
+
+
+
+
 .galeria{
     margin-top: 5rem;
 }
 .galeria__contenedor{
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
     margin: 0 2rem 0 2rem;
 }
+.galeria__contenedor-individual{
+    overflow: hidden;
+    border-radius: 1rem;
+}
 .galeria__contenedor img{
-	width: 75vw;
-    height: 20rem;
+    width: 23.5rem;
+    height: 16rem;
 	object-fit: cover;
     box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    transition: scale 400ms;
 }
-.galeria__contenedor img:first-child{
-	border-radius: 1.2rem 1.2rem 0 0;
+
+.galeria__contenedor img:hover{
+    scale: 120%;
 }
-.galeria__contenedor img:nth-child(3){
-	border-radius: 0 0 1.2rem 1.2rem;
+
+
+
+
+
+.separador{
+    margin-top: 5rem;
+    text-align: center;
 }
+.separador__contenedor{
+    display: inline-block;
+}
+
+.separador__texto{
+    color: var(--color-morado-claro);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.45rem;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 12s steps(63),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+
+
+
+
+
+.educacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+.educacion__imagen{
+    width: 22rem;
+}
+.educacion__contenedor-texto{
+    width: 25rem;
+}
+
+.educacion__contenedor-texto b{
+    color: var(--color-morado-oscuro);
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+.educacion__contenedor-texto li{
+    padding: .2rem 0 .2rem 0;
+    line-height: 1.5rem;
+}
+
+.educacion button{
+    border-radius: 1.5rem;
+    border: none;
+    width: 23rem;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+}
+.educacion a{
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+}
+
+
+
 .cv{
     display: flex;
     flex-direction: row;
@@ -44,32 +134,35 @@
     margin-top: 5rem;
     gap: 3.5rem;
 }
-.cv__formacion, .cv__habilidades, .cv__herramientas{
+.cv__hardskills, .cv__softskills, .cv__herramientas{
     width: 23vw;
 }
-.cv__formacion-lista,.cv__habilidades-lista,.cv__herramientas-lista{
+.cv__habilidades-lista{
     margin-top: 1rem;
 }
-.cv__formacion-lista button{
-    border-radius: 1.5rem;
-    border: none;
-    width: 20rem;
-    padding: 0.6rem;
-    margin-top: 35px;
-    background-color: #fff;
-    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
-}
-.cv__formacion-lista a{
-    font-weight: 600;
-    color:var(--color-morado-medio);
-}
-.cv h3{
+
+
+.cv h3, .educacion__contenedor-texto h3{
     font-size: 2rem;
     color:var(--color-morado-claro);
 }
 .cv li{
     font-size: 1.1rem;
     line-height: 1.6rem;
+}
+.habilidades__hardskills-sublista, .cv__habilidades-subitems{
+    margin: 0.7rem 0 0.7rem 0;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    border: 1px solid var(--color-morado-claro);
+    border-radius: 0.8rem;
+    width: 80%;
+    
+}
+.habilidades__hardskills-sublista li, .cv__habilidades-subitems li{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-left: 1rem;
+    color: var(--color-morado-medio);
 }
 .cv b{
     font-size: 1rem;
@@ -78,52 +171,195 @@
 
 
 
-@media screen and (min-width: 768px) and (max-width:1210px){
-    .descripcion{
-        gap: 4rem;
-    }
-    .descripcion p{
-        max-width: 40%;
-    }
-    .galeria__contenedor img{
-        width: 82vw;
-        height: 20rem;
-    }
-    .cv__formacion-lista button{
-        width: 12rem;
-    }
-    .cv h3{
-        font-size: 1.6rem;
-    }
-}
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width:1210px){
+
     .descripcion{
-        flex-direction: column;
-        gap: 1rem;
         align-items: center;
+        gap: 3rem;
+        margin: 1.5rem 1rem 0 6rem; 
     }
     .descripcion p{
-        text-align: center;
-        max-width: 75vw;
+        width: 46vw;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .descripcion__imagen{
+        position: relative;
+        margin-top: 0rem;
+        width: 30vw;
+    }
+
+
+
+    .galeria__contenedor{
+        gap: 1rem;
     }
     .galeria__contenedor img{
-        width: 82vw;
-        height: 12rem;
-    }  
+        width: 36vw;
+        height: 30vh;
+    }
+
+
+
+
+    .separador{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .separador__contenedor{
+        display: inline-block;
+    }
+    .separador__texto{
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }
+    .educacion{
+        text-align: center;
+        gap: 2rem;
+        margin-top: 3.5rem;
+    }
+    .educacion__imagen{
+        width: 50vw;
+    }
+    .educacion__contenedor-texto{
+        width: 50vw;
+    }
+    .educacion button{
+        width: 40vw;    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    }
+    .educacion a{
+        letter-spacing: 0.1rem;
+    }
+
+
+
+
+
     .cv{
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
+    }
+    .cv__hardskills, .cv__softskills, .cv__herramientas{
         text-align: center;
-        gap: 3rem;
+        width: 60vw;
     }
-    .cv h3{
-        font-size: 1.6rem;
+    .habilidades__hardskills-sublista, .cv__habilidades-subitems{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0.7rem 0 0.7rem 0rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+        border: 1px solid var(--color-morado-claro);
+        border-radius: 0.8rem;
+        width: 100%;
+        
     }
-    .cv__formacion, .cv__habilidades, .cv__herramientas{
+    .habilidades__hardskills-sublista li, .cv__habilidades-subitems li{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding-left: 0rem;
+        color: var(--color-morado-medio);
+    }
+    .cv b{
+        font-size: 1rem;
+        color: var(--color-morado-oscuro);
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    .descripcion{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 2rem 0 0 0; 
+    }
+    .descripcion p{
+        text-align: center;
         width: 65vw;
+        font-size: 1rem;
+        line-height: 1.8rem;
     }
-    .cv__formacion-lista button{
-        width: 12rem;
+    .descripcion__imagen{
+        position: relative;
+        margin-top: 0rem;
+        width: 45vw;
+    }
+
+
+
+    .galeria__contenedor{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .galeria__contenedor img{
+        width: 78vw;
+        height: 36vh;
+    }
+
+
+    .separador{
+        display: none;
+    }
+
+
+    .educacion{
+        text-align: center;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+    .educacion__imagen{
+        width: 50vw;
+    }
+    .educacion__contenedor-texto{
+        width: 75vw;
+    }
+    .educacion button{
+        width: 40vw;    box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
+    }
+    .educacion a{
+        letter-spacing: 0.1rem;
+    }
+
+
+
+
+
+    .cv{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .cv__hardskills, .cv__softskills, .cv__herramientas{
+        text-align: center;
+        width: 60vw;
+    }
+    .habilidades__hardskills-sublista, .cv__habilidades-subitems{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0.7rem 0 0.7rem 0rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+        border: 1px solid var(--color-morado-claro);
+        border-radius: 0.8rem;
+        width: 100%;
+        
+    }
+    .habilidades__hardskills-sublista li, .cv__habilidades-subitems li{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding-left: 0rem;
+        color: var(--color-morado-medio);
+    }
+    .cv b{
+        font-size: 1rem;
+        color: var(--color-morado-oscuro);
     }
 }

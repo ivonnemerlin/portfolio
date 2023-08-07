@@ -1,19 +1,17 @@
 .nav{
-
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    right: 0;
     z-index: 100;
-    margin-top: 1rem;
 }
 
 .nav__desktop{
+    width: 100vw;
+    top: 0;
+    right: 0;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
     align-items: center;
-    padding-top: 0.9rem;
+    margin-top: 2rem;
 }
 
 .nav__logotipo-container{
@@ -106,14 +104,11 @@
 
 
     .nav{
-        backdrop-filter: none;
-        position: initial;
-    
         --img1: scale(1);
         --img2: scale(0);
 
+        margin-top: 1.5rem;
     }
-    
     .nav:has( .dropdown:target ){
         --img1: scale(0);
         --img2: scale(1);
@@ -140,10 +135,10 @@
         grid-area: title;
         display: flex;
         align-items: center;
+        gap: 1rem;
     }
     
     .nav__logo-imagen{
-        padding: 0 .15rem 0 .15rem;
         height: 30px;
         color: var(--color-morado-medio);
         
@@ -153,7 +148,7 @@
         color: var(--color-morado-medio);
         font-size: 0.9rem;
         font-weight: 800;
-        letter-spacing: 0.35rem;
+        letter-spacing: 0.15rem;
     }
     
     

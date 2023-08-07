@@ -29,6 +29,7 @@
     margin-top: 35px;    
 }
 .resumen__descripcion p{
+    line-height: 1.8rem;
     width: 32rem;
 }
 

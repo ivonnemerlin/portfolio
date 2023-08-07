@@ -1,70 +1,93 @@
 .proyectos{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    gap: 5rem;
-    margin-top: 5rem;
+    gap: 3rem 4.8rem;
+    margin: 5rem 2rem 0 2rem;
 }
 .proyectos p {
     color: var(--color-negro);
-    font-size: 1.2rem;
     margin-top: 0.5rem;
 }
 .proyectos__subtitulo{
-    margin-left: 11rem;
+    margin-left: 0rem;
 }
 .proyectos__subtitulo h3{    
     font-size: 1.6rem;
-    color: var(--color-morado-claro);
+    color: var(--color-morado-oscuro);
 }
 .proyectos__img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+
 }
 .proyectos__img img{
     box-shadow: 0px 1px 2px 0px #1e1e1e30, 0px 2px 6px 2px #1e1e1e15;
-    width: 76vw;
-    height: 45vh;
+    width: 36vw;
+    height: 60vh;
     object-fit: cover;
     border-radius: 1rem;
+    transition: scale 400ms;
+
+}
+
+.proyectos__img img:hover{
+    scale: 117%;
+
 }
 
 
 @media screen and (min-width: 768px) and (max-width:1210px){
-    .proyectos__subtitulo{
-        margin-left: 6rem;
+
+    .proyectos{
+        gap: 3rem 2rem;
     }
+    .proyectos__contenedor{
+        width: 34vw;
+    }
+    .proyectos__subtitulo{
+        margin-left: 0rem;
+    }
+    .proyectos__subtitulo h3{    
+        font-size: 1.4rem;
+    }
+    .proyectos__img img{
+        width: 34vw;
+        height: 36vh;
+    }
+    
+
 }
 
 @media screen and (max-width: 767px){
+    .proyectos{
+        gap: 3rem 2rem;
+    }
+    .proyectos__contenedor{
+        width: 80vw;
+    }
     .proyectos__subtitulo{
-        text-align: center;
         margin-left: 0rem;
     }
-    .proyectos__subtitulo h3{
-        font-size: 1.75rem;
-    }
-    .proyectos__subtitulo p{
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-    .proyectos__img{
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .proyectos__subtitulo h3{    
+        font-size: 1.4rem;
     }
     .proyectos__img img{
-        width: 70vw;
-        height: 22vh;
+        width: 80vw;
+        height: 36vh;
+        transition: none;
     }
-    .proyectos__img img:first-child, .proyectos__img img:nth-child(2){
-        border-radius: 1rem ;
+    .proyectos__img img:hover{
+        scale: 100%;
+    
     }
-    .proyectos p{
-        margin: 0.5rem 1rem 0 1rem;
+    
 
-    }
+
 }

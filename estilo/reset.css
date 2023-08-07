@@ -1,7 +1,11 @@
 :root{
     --color-morado-oscuro:#3F3351;
+    --color-morado-brillante:#6528F7;
     --color-morado-medio:#645CBB;
+    --color-morado-medio2:#9681EB;
     --color-morado-claro:#A084DC;
+    --color-morado-claro2:#DBC4F0;
+    --color-azul-claro: #ACBCFF;
     --color-azul-medio: #0081C9;
     --color-negro:#1e1e1e;
     --color-negro-2:#2D2926;
@@ -55,13 +59,13 @@ a{
 
 @media screen and (min-width: 768px) and (max-width:1210px){
     .hero{
-        margin: 7rem 1rem 0 6rem;
+        margin: 5rem 1rem 0 6rem;
     }
 }
 
 @media screen and (max-width: 767px){
     .hero{
-        margin: 10rem 1.5rem 0 1.5rem;
+        margin: 5rem 1.5rem 0 1.5rem;
         text-align: center;
     }
     .hero__titulo {
